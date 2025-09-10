@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.car-image {
+    margin-bottom: 20px;
+}
+
+.car {
+    width: calc(100% - 40px);
+    max-width: 335px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    margin: 0 auto;
+    display: block;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.intro-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.5;
+    max-width: 320px;
+    margin: 0;
+}
+
+/* Features List */
+.features-list {
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding: 0 4px;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.feature-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.4;
+}
+
+/* CTA Section */
+.cta-section {
+    margin-top: 20px;
+}
+
+.cta-button {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #333333;
+}
+
+.cta-button:active {
+    background-color: #555555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 320px) {
+    .container {
+        padding: 16px;
+    }
+    
+    .main-title {
+        font-size: 24px;
+    }
+    
+    .intro-text {
+        font-size: 14px;
+    }
+    
+    .feature-title {
+        font-size: 16px;
+    }
+    
+    .feature-description {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 376px) {
+    .container {
+        max-width: 100%;
+        padding: 24px;
+    }
+}

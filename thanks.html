@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасибо за участие</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .moai-image {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333333;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .message {
+            font-size: 16px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+
+        .conclusion {
+            font-size: 16px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 1.5;
+            max-width: 300px;
+        }
+
+        /* Скрываем кнопку "Назад" */
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Блокируем контекстное меню */
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNG605KE2R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VNG605KE2R');
+    </script>
+    
+    <!-- Yandex Metrika -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(96171108, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/96171108" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+    <div class="moai-image">
+        <img src="images/moai.png" alt="Moai" style="width: 100%; height: auto;">
+    </div>
+    
+    <h1 class="title">Только тссс</h1>
+    
+    <p class="message">Вы поучаствовали в очень важном исследовании, которое поможет улучшить продукт. Вы – наш герой!</p>
+    
+    <p class="conclusion">Продукта не существует</p>
+
+    <script>
+        // Блокируем кнопку "Назад" браузера
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+
+        // Блокируем контекстное меню
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+
+        // Блокируем выделение текста
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+
+        // Блокируем перетаскивание
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+
+        // Блокируем горячие клавиши
+        document.addEventListener('keydown', function(e) {
+            // Блокируем F5, Ctrl+R, Ctrl+Shift+R
+            if (e.key === 'F5' || 
+                (e.ctrlKey && e.key === 'r') || 
+                (e.ctrlKey && e.shiftKey && e.key === 'R')) {
+                e.preventDefault();
+            }
+            
+            // Блокируем Alt+Left (кнопка назад)
+            if (e.altKey && e.key === 'ArrowLeft') {
+                e.preventDefault();
+            }
+            
+            // Блокируем Ctrl+Z (отмена)
+            if (e.ctrlKey && e.key === 'z') {
+                e.preventDefault();
+            }
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+
+        // Блокируем колесо мыши для предотвращения прокрутки назад
+        document.addEventListener('wheel', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+
+        // Блокируем touch события для мобильных устройств
+        document.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+
+        document.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+
+        // Блокируем двойной клик
+        document.addEventListener('dblclick', function(e) {
+            e.preventDefault();
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+
+        // Блокируем все попытки навигации
+        window.addEventListener('beforeunload', function(e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+
+        // Дополнительная защита от закрытия вкладки
+        window.addEventListener('unload', function(e) {
+            e.preventDefault();
+        });        
+        // Track end page view (only on first render)
+        if (!window.endPageViewTracked) {
+            window.endPageViewTracked = true;
+            gtag('event', '6246_end_page_view_var5');
+            ym(96171108, 'reachGoal', '6246_end_page_view_var5');
+        }
+    </script>
+</body>
+</html>
