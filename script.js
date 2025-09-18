@@ -2,6 +2,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Add smooth scrolling behavior
     document.documentElement.style.scrollBehavior = 'smooth';
+    // Check if user already completed the flow
+    if (localStorage.getItem('6246_flow_completed_var5')) {
+        // Redirect to thanks page immediately
+        window.location.replace('thanks.html');
+        return;
+    }
+    
+    
     // Track page view (only on first render)
     if (!window.pageViewTracked) {
         window.pageViewTracked = true;
@@ -22,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (typeof gtag !== 'undefined') {
                 gtag('event', '6246_click_button_var5');
             ym(96171108, 'reachGoal', '6246_click_button_var5');
+            
+            // Mark flow as completed
+            localStorage.setItem('6246_flow_completed_var5', 'true');
             }
             
             // Redirect to thanks page
