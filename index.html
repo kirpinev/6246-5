@@ -32,6 +32,13 @@
         });
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/96171108" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    
+    <!-- Immediate flow protection check -->
+    <script>
+        if (localStorage.getItem('6246_flow_completed_var5')) {
+            window.location.replace('thanks.html');
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -103,6 +110,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>
